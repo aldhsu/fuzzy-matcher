@@ -22,7 +22,7 @@ use crate::util::*;
 const BONUS_MATCHED: i64 = 4;
 const BONUS_CASE_MATCH: i64 = 4;
 const BONUS_UPPER_MATCH: i64 = 6;
-const BONUS_ADJACENCY: i64 = 10;
+const BONUS_ADJACENCY: i64 = 13;
 const BONUS_SEPARATOR: i64 = 8;
 const BONUS_CAMEL: i64 = 8;
 const PENALTY_CASE_UNMATCHED: i64 = -1;
@@ -333,5 +333,6 @@ mod tests {
         // score(PRINT) > kMinScore
         assert_order("Int", &["int", "INT", "PRINT"]);
         assert_order("skim", &["Code/External/skim", "Code/External/skim/man"]);
+        // assert_order("skim", &["Code/External/skim", "Code/External/skim/man"]);
     }
 }
